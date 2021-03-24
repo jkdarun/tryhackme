@@ -46,3 +46,5 @@ The most common (and simplest) format of flat-file database is an sqlite databas
 
 file example.db      (shows details about the file)
 sqlite3 example.db
+sqlite> .tables          (to see the tables in the DB)
+sqlite> PRAGMA table_info(customers);             (to see the table information)
