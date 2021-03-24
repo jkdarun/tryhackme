@@ -39,3 +39,10 @@ A session cookie is needed because web servers use HTTP(S) to communicate which 
 re-registration of an existing user.
 say there is an existing user with the name admin and now we want to get access to their account so what we can do is try to re-register that username but with slight modification. We are going to enter " admin"(notice the space in the starting). Now when you enter that in the username field and enter other required information like email id or password and submit that data. It will actually register a new user but that user will have the same right as normal admin. That new user will also be able to see all the content presented under the user admin.
 
+
+Sensitive Data Exposure
+Databases can also be stored as files. These databases are referred to as "flat-file" databases, as they are stored as a single file on the computer.
+The most common (and simplest) format of flat-file database is an sqlite database. Can be interacted with sqlite3 client.
+
+file example.db      (shows details about the file)
+sqlite3 example.db
