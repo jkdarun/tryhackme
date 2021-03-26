@@ -131,3 +131,10 @@ If we use this payload then a website vulnerable to XXE(normally) would display 
 https://hackingprofessional.github.io/Security/How-to-hack-a-website-with-XML-External-Entity-Injection/
 
 
+
+Broken Access Control
+broken access control allows attackers to bypass authorization which can allow them to view sensitive data or perform tasks as if they were a privileged user.
+sccenario: change parameters in SQL call, force browses to target URLs
+
+IDOR, or Insecure Direct Object Reference, is the act of exploiting a misconfiguration in the way user input is handled, to access resources you wouldn't ordinarily be able to access. IDOR is a type of access control vulnerability.
+
