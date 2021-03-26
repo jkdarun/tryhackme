@@ -138,3 +138,15 @@ sccenario: change parameters in SQL call, force browses to target URLs
 
 IDOR, or Insecure Direct Object Reference, is the act of exploiting a misconfiguration in the way user input is handled, to access resources you wouldn't ordinarily be able to access. IDOR is a type of access control vulnerability.
 
+
+Security Misconfiguration 
+occur when security could have been configured properly but was not.
+Security misconfigurations include:
+
+Poorly configured permissions on cloud services, like S3 buckets
+Having unnecessary features enabled, like services, pages, accounts or privileges
+Default accounts with unchanged passwords
+Error messages that are overly detailed and allow an attacker to find out more about the system
+Not using HTTP security headers, or revealing too much detail in the Server: HTTP header
+
+find default credentials by searching for "pensive notes default credentials " on google. open the first github link to find the username and password
