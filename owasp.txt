@@ -202,4 +202,9 @@ A prominent element of object-oriented programming (OOP), objects are made up of
 - State
 - Behaviour
 
+Insecure Deserialization - Deserialization 
+Serialisation is the process of converting objects used in programming into simpler, compatible formatting for transmitting between systems or networks for further processing or storage.
+Alternatively, deserialisation is the reverse of this; converting serialised information into their complex form - an object that the application will understand.
+
+
 
