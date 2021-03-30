@@ -56,3 +56,41 @@ mv file destination
 mv file ~   (to home)
 mv file ~/abc     (rename to abc)
 
+ln
+hard linking, duplicates the file and links the duplicate to the original copy.
+whatever is done to the created link is also done to the original file
+ln source destination
+ln -s flie destination    (symbolic link - has no data in it at all, just a reference to another file)
+
+find
+find /    (list every file on OS)
+find dir -user name
+find dir -group name
+find -perm    (permission)
+
+grep hello test -n      (shows line number also)
+
+sudo
+-u      (specify which user to run the command as)
+sudo -u username whoami
+-l      (list current sudo privileges)
+
+adduser name      (need root permissions)
+addgroup name     (need root permissions)
+usermod -a -G <groups seperated by commas> <user>         (to add a user to a group)
+
+bash s.sh
+#!/bin/bash     (shebang and path to the shell)  (if this added, sh extension not needed)
+
+/tmp      (temporary files, upon shutdown, all files inside it get deleted)
+/etc/sudoers      (to control sudo permissions of every user)
+/usr      (where all software is installed)
+/bin and /sbin      (system critical files)
+/var      (misc directory)
+
+ps    (list of user created processes)
+ps -ef      (system processes)
+kill PID
+top   (processes sorted in those taking most system resources to least)
+
+    
