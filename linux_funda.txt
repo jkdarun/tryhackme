@@ -1,0 +1,58 @@
+echo -n hello     (to output without newline)
+
+man
+
+ls -a   (all)
+ls -l   (long list)
+
+cat -n    (numbers all output lines)
+
+touch
+
+running binary
+/tmp/aa/hello.bin
+relative path  ( . ) - current dir      (./hello)
+               ( .. ) - parent dir      (../hello)
+               ( ~ ) - home dir         (~/hello)
+
+su      (to change user)
+su username
+su      (same as su root)
+
+ssh
+ssh <user>@<host>     (host or IP address)
+
+ls && echo hello      (2nd command runs after 1st command is run, if 1st fails, 2nd is not run)
+
+sleep 5 &     (& to make it run in the background)
+
+export <varname>=<value>
+echo $<varname>
+
+>>  (store output of a command)
+|   (take output and use it as input for 2nd command)
+echo hello > test.txt     (will erase contents if file exists)
+echo hello >> test.txt    (appends)
+cat test | grep "hello"
+
+fvbnjzdidzv;ls      (1st command need not execute successfully)
+
+chown
+chown user:group file
+chown user file       (change only user)
+chown -R user file    (recursively)
+
+chmod
+chmod <permissions> <file>
+chnmod 777 file   (7-RWX for user, 7-RWX for group, 7-RWX for everyone else)
+
+rm
+need write permission
+rm -r   (recursively)
+rm -f   (suppress warning prompt)
+
+mv
+mv file destination
+mv file ~   (to home)
+mv file ~/abc     (rename to abc)
+
