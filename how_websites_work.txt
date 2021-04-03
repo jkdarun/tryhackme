@@ -1,1 +1,36 @@
+HTML
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TryHackMe HTML Editor</title>
+    </head>
+    <body>
+        <h1>Cat Website!</h1>
+        <p>See images of all my cats!</p>
+        <img src='img/cat-1.jpg'>
+        <!-- Add dog image here -->
+    </body>
+</html>
 
+<!DOCTYPE html>       (defines that page is a HTML5 document)
+<html>        (root element of HTML page)
+Tags (or elements) can contain attributes,multiple attributes also, like
+class attribute : <p class="bold-text">       (to style an element)
+src attribute : <img src="img/cat.jpg">       (used on images to specify location)
+id attribute : <p id="example">         (unique to the element)
+
+
+JAVASCRIPT
+to make a webpage interactive, to control functionality of webpages
+loaded within <script> tags or can be included remotely with the src attribute: <script src="/location/of/javascript_file.js"></script>
+
+The following JavaScript code finds a HTML element on the page with the id of "demo" and changes the element's contents to "Hack the Planet" : document.getElementById("demo").innerHTML = "Hack the Planet";
+
+HTML elements can also have events, such as "onclick" or "onhover" that execute JavaScript when the event occurs. The following code changes the text of the element with the demo ID to Button Clicked:
+<button onclick='document.getElementById("demo").innerHTML = "Button Clicked";'>Click Me!</button>
+
+
+Sensitive Data Exposure 
+Whenever you're assessing a web application for security issues, one of the first things you should do is review the page source code to see if you can find any exposed login credentials or hidden links.
+
+      
