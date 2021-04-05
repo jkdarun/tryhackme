@@ -1,0 +1,13 @@
+OWASP Juice Shop
+
+We will look at OWASP's Top 10 vulnerabilities in web applications.
+Need to use Burp Suite
+Juice Shop is a large application so we will not be covering every topic from the top 10.
+
+We will, however, cover the following topics:
+Injection     ( https://owasp.org/www-project-top-ten/2017/A1_2017-Injection.html )
+Broken Authentication     ( https://owasp.org/www-project-top-ten/2017/A2_2017-Broken_Authentication.html )
+Sensitive Data Exposure     ( https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html )
+Broken Access Control     ( https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control.html )
+Cross-Site Scripting XSS      ( https://owasp.org/www-project-top-ten/2017/A7_2017-Cross-Site_Scripting_(XSS).html )
+
