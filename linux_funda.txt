@@ -82,11 +82,14 @@ usermod -a -G <groups seperated by commas> <user>         (to add a user to a gr
 bash s.sh
 #!/bin/bash     (shebang and path to the shell)  (if this added, sh extension not needed)
 
-/tmp      (temporary files, upon shutdown, all files inside it get deleted)
+/etc/passwd       (Stores user information - Often used to see all the users on a system)
+/etc/shadow       (Has all the passwords of these users)
+/tmp              (temporary files, upon shutdown, all files inside it get deleted)
 /etc/sudoers      (to control sudo permissions of every user)
-/usr      (where all software is installed)
-/bin and /sbin      (system critical files)
-/var      (misc directory)
+/usr              (where all software is installed)
+/bin and /sbin    (system critical files)
+/var              (misc directory)
+$PATH             (Stores all the binaries you're able to run - same as $PATH on Windows)
 
 ps    (list of user created processes)
 ps -ef      (system processes)
