@@ -11,3 +11,32 @@ Sensitive Data Exposure     ( https://owasp.org/www-project-top-ten/2017/A3_2017
 Broken Access Control     ( https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control.html )
 Cross-Site Scripting XSS      ( https://owasp.org/www-project-top-ten/2017/A7_2017-Cross-Site_Scripting_(XSS).html )
 
+Let's go on an adventure
+find admin's email ID - clicking on the products reveals some information like reviews, can see admin;s email there.
+using search box to search for something specific will be added to url 
+in this case, seaching for "a" gives 10.10.206.192/#/search?q=a
+one person's review says "replicator", searching for it on google tells that its a part of the show Star trek
+
+
+Inject the juice
+types of injection attacks:
+1.SQL injection 
+2.Command injection
+3.Email injection -  allows malicious user to send email without prior authorization by email server. Occur when attacker adds extra data fields which are not interpreted by the server correctly
+
+login credentials entered and submitted, capture in burpsuite (make sure interceptor is on )and can see the data to be sent to the server.
+can see {"email":"admin","password":"password"} change it to
+{"email":"' or 1=1--","password":"password"}
+
+The character ' will close the brackets in the SQL query
+'OR' in a SQL statement will return true if either side of it is true. As 1=1 is always true, the whole statement is true. Thus it will tell the server that the email is valid, and log us into user id 0, which happens to be the administrator account.
+The -- character is used in SQL to comment out data, any restrictions on the login will no longer work as they are interpreted as a comment. This is like the # and // comment in python and javascript respectively.
+this will login as admin and flag will be shown
+
+now login to bender's account with email bender@juice-sh.op using the same method
+in this case, change email to bender@juice-sh.op'--
+As the email id is valid (which will return true), we do not need to force it to be true. Thus we are able to use '-- to bypass the login system. Note the 1=1 can be used when the email or username is not known or invalid.
+this will show a flag on the website
+
+
+
