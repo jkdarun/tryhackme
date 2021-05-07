@@ -5,3 +5,17 @@ https://www.vulnhub.com/
 https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies
 
 https://owasp.org/www-project-top-ten/2017/A7_2017-Cross-Site_Scripting_(XSS).html
+
+https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/
+
+https://csea-iitb.github.io/IITBreachers-wiki/2020/07/23/Introduction-To-Reverse-Engineering.html
+
+https://medium.com/@asfiyashaikh10/cross-site-request-forgery-csrf-8ce6f9ee0379
+
+https://www.hackingarticles.in/understanding-the-csrf-vulnerability-a-beginners-guide/
+
+https://owasp.org/www-project-top-ten/2017/A1_2017-Injection.html
+
+https://owasp.org/www-project-top-ten/2017/A2_2017-Broken_Authentication.html
+
+
